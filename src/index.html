@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home</title>
+  <link href="./css/index.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  @@include('./components/_sprites.html')
+  <main class="main">
+    <div class="main__top">
+      @@include('./components/_header.html')
+      @@include('./components/_intro.html')
+      @@include('./components/_security.html')
+      @@include('./components/_advantages.html')
+      @@include('./components/_security-mode.html')
+      <img class="background" src="./img/background-top.jpg" alt="background">
+    </div>
+    <div class="main__bottom">
+      @@include('./components/_smart-home.html')
+      @@include('./components/_monitoring.html')
+      @@include('./components/_about.html')
+      @@include('./components/_technologies.html')
+      @@include('./components/_footer.html')
+      <img class="background" src="./img/background-middle.jpg" alt="background">
+    </div>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
