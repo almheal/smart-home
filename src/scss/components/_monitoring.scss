@@ -1,6 +1,11 @@
 .monitoring{
   position: relative;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 1s;
+  &.active{
+    opacity: 1;
+  }
 
   &__inner{
     padding: 90px 0;

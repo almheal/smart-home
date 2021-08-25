@@ -27,6 +27,15 @@
   &__column{
     width: 659px;
     height: 815px;
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 1s;
+
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 1s;
+    }
 
     @media(max-width: 1150px){
       width: 500px;
@@ -68,6 +77,16 @@
   &__content{
     flex: 1;
     padding-left: 30px;
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 1s;
+
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 1s;
+    }
+
     @media(max-width: 767px){
       flex: auto;
       order: -1;

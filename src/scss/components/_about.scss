@@ -1,6 +1,13 @@
 .about{
   position: relative;
   z-index: 9;
+  opacity: 0;
+  transition: opacity 1s;
+
+  &.active{
+    opacity: 1;
+  }
+
   &__inner{
     padding: 90px 0 160px;
 
@@ -83,6 +90,21 @@
     font-size: 23px;
     margin-bottom: 20px;
     padding-left: 48px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition-duration: 1s;
+
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+      transition-duration: 1s;
+      &:nth-child(2){
+        transition-delay: 0.5s;
+      }
+      &:nth-child(3){
+        transition-delay: 1s;
+      }
+    }
 
     @media(max-width: 450px){
       font-size: 20px;

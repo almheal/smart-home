@@ -40,6 +40,15 @@
     margin: 0 25px 40px;
     box-shadow: 15px 0 50px #000;
     border-radius: 18px;
+    transform: translateY(70%);
+    opacity: 0;
+    transition: 1s;
+
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 1s;
+    }
 
     @media(max-width: 992px){
       width: 50%;

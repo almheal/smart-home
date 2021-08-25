@@ -36,6 +36,14 @@ body{
   }
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+html{
+  overflow-y: scroll;
+}
+
 h1{
   font-size: 104px;
 

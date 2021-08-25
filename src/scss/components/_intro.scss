@@ -4,6 +4,7 @@
 
   &__inner{
     padding: 65px 0;
+    overflow: hidden;
 
     @media(max-width: 767px){
       padding: 40px 0;
@@ -21,6 +22,15 @@
     color: $white;
     flex: 1;
     max-width: 500px;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 1s;
+
+    &.active{
+      transform: translateX(0);
+      opacity: 1;
+      transition: 1s;
+    }
 
     @media(max-width: 769px){
       max-width: 100%;
@@ -47,6 +57,15 @@
   &__column{
     width: 546px;
     height: 546px;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 1s;
+
+    &.active{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 1s;
+    }
 
     @media(max-width: 992px){
       width: 420px;

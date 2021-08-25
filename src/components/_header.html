@@ -4,7 +4,10 @@
       <a class="logo" href="#">
         <img class="logo__img" src="./img/logo.png" alt="logo" />
       </a>
-      <nav class="menu">
+      <button class="burger-button" data-button-menu>
+        <span class="burger-button__line"></span>
+      </button>
+      <nav class="menu" data-menu>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">Home</a>
@@ -26,26 +29,41 @@
       </div>
 
       <div class="socials">
-        <a class="socials__item" href="#">
-          <svg class="socials__icon">
-            <use xlink:href="#instagram"></use>
+        <ul class="socials__list" data-socials-list>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg class="socials__icon">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="socials__dropdown" data-socials-dropdown>
+          <svg class="dropdown-icon">
+            <use xlink:href="#arrow-down"></use>
           </svg>
-        </a>
-        <a class="socials__item" href="#">
-          <svg class="socials__icon">
-            <use xlink:href="#facebook"></use>
-          </svg>
-        </a>
-        <a class="socials__item" href="#">
-          <svg class="socials__icon">
-            <use xlink:href="#twitter"></use>
-          </svg>
-        </a>
-        <a class="socials__item" href="#">
-          <svg class="socials__icon">
-            <use xlink:href="#whatsapp"></use>
-          </svg>
-        </a>
+        </div>
       </div>
     </div>
   </div>
